@@ -1,0 +1,13 @@
+/**
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: $selection;
+  text-shadow: none;
+}
+
+::selection {
+  background: $selection;
+  text-shadow: none;
+}

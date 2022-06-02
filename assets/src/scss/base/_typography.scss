@@ -1,0 +1,51 @@
+/**
+ * Sections:
+ * 1. Font Definitions.
+ * 2. General Font Settings.
+ */
+
+
+/**
+ * 1. Font Definitions
+ */
+@include font-face(open_sansregular, '../fonts/opensans-regular-webfont', 400, normal);
+@include font-face(open_sansbold, '../fonts/opensans-bold-webfont', 700, normal);
+@include font-face(open_sansitalic, '../fonts/opensans-italic-webfont', 700, italic);
+
+// Open Sans Regular.
+.sans-regular {
+  font-family: 'open_sansregular', $fallback-stack;
+  font-weight: 400;
+  font-style: normal;
+}
+
+//  Open Sans Italic.
+.sans-italic {
+  font-family: 'open_sansitalic', $fallback-stack;
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Open Sans Bold.
+.sans-bold {
+  font-family: 'open_sansbold', $fallback-stack;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/**
+ * 2. General Font Settings.
+ */
+body {
+  @extend .sans-regular;
+}
+
+strong,
+p.bold {
+  @extend .sans-bold;
+}
+
+em {
+  @extend .sans-italic;
+}
