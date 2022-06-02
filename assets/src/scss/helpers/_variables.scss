@@ -12,13 +12,6 @@
 // Fallback Stack.
 $fallback-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-// Font Sizes.
-$body-font-size: 14;
-
-// Line Heights.
-$base-line-height: 1.5;
-
-
 /**
  * 2. Colours.
  */
@@ -26,40 +19,30 @@ $base-line-height: 1.5;
 $white: #ffffff;
 $black: #000000;
 
-$crimson: #da1c23;
-$jade: #00a77e;
+$whisper: #f8f8fb;
+$shuttle-gray: #5f636a;
+$mine-shaft: #242424;
 
-// Brand Colours.
-$color-brand-1: $crimson;
-$color-brand-2: $jade;
+$dodger-blue: #575aff;
+$blaze-orange: #fa6400;
 
 // Dark Colours.
-$color-dark-ui-1: #151a1d;
-$color-dark-ui-2: #242b2f;
+$color-dark-ui-1: $shuttle-gray;
+$color-dark-ui-2: $mine-shaft;
 
 // Light Colours.
-$color-light-ui-1: #d3d3d3;
-$color-light-ui-2: #e8e8e8;
+$color-light-ui-1: $whisper;
 
 // Text Colours.
-$color-text-1: #353c40;
-$color-text-2: #707578;
+$color-text-1: $mine-shaft;
+$color-text-2: $shuttle-gray;
 
-// Font Colours.
-$base-font-color: $color-text-1;
-$base-accent-color: $color-brand-1;
-
-// Social Media Colours.
-$twitter: #00aced;
-$facebook: #3b5998;
-$linkedin: #007bb6;
-$youtube: #bb0000;
-$tumblr: #32506d;
-$instagram: #517fa4;
-$vimeo: #aad450;
+// Highlight Colours.
+$color-highlight-1: $dodger-blue;
+$color-highlight-2: $blaze-orange;
 
 // Misc Colours.
-$selection: $color-brand-1; // Cursor selection colour.
+$selection: lighten($color-highlight-1, 30%); // Cursor selection colour.
 
 
 /**

@@ -486,11 +486,11 @@ textarea {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #da1c23;
+  background: #f0f0ff;
   text-shadow: none; }
 
 ::selection {
-  background: #da1c23;
+  background: #f0f0ff;
   text-shadow: none; }
 
 /**
