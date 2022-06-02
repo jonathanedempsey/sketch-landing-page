@@ -550,6 +550,9 @@ textarea {
 a {
   text-decoration: none; }
 
+a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .main-nav__link a:focus, a.hover--underline:active, .main-nav__link a:active {
+  text-decoration: underline; }
+
 /**
  * 4. Components
  */
@@ -601,10 +604,12 @@ a {
   width: 30px;
   height: auto; }
 
-.main-nav__link a {
-  font-size: 15px;
-  line-height: 15px;
-  color: #242424; }
+.main-nav__link {
+  font-weight: bold; }
+  .main-nav__link a {
+    font-size: 15px;
+    line-height: 15px;
+    color: #242424; }
 
 /**
  * 5. Layout

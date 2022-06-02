@@ -18,8 +18,10 @@
 
 .main-nav__link {
     @extend .raleway-semibold;
+    font-weight: bold;
 
     a {
+        @extend .hover--underline;
         @include text-style(15px, 15px, $color-text-1);
     }
 }

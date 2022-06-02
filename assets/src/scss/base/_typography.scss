@@ -58,3 +58,11 @@ body {
 a {
     text-decoration: none;
 }
+
+a.hover--underline {
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+}
