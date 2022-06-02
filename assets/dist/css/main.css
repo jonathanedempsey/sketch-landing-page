@@ -19,6 +19,7 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -406,6 +407,12 @@ textarea {
  * 3. Breakpoints.
  */
 /**
+ * Sets font size, height and colour
+ */
+/**
+ * Wrappers / Grids
+ */
+/**
  * Hide visually and from screen readers:
  * http://juicystudio.com/article/screen-readers-display-none.php
  */
@@ -501,30 +508,29 @@ textarea {
 /**
  * 1. Font Definitions
  */
-@font-face {
-  font-family: open_sansregular; }
+.raleway-light {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; }
 
-@font-face {
-  font-family: open_sansbold; }
+.raleway-regular, body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; }
 
-@font-face {
-  font-family: open_sansitalic; }
+.raleway-medium {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; }
 
-.sans-regular, body {
-  font-family: "open_sansregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
-  font-style: normal; }
+.raleway-semibold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600; }
 
-.sans-italic, em {
-  font-family: "open_sansitalic", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
-  font-style: italic; }
+.raleway-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
 
-.sans-bold, strong,
-p.bold {
-  font-family: "open_sansbold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 700;
-  font-style: normal; }
+.raleway-black {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900; }
 
 /**
  * 2. General Font Settings.

@@ -1,0 +1,21 @@
+/**
+ * Sets font size, height and colour
+ */
+@mixin text-style($size: 16px, $height: 24px, $color: $color-text-1) {
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+/**
+ * Wrappers / Grids
+ */
+ @mixin wrapper--1200 {
+    width: auto;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    float: none;
+}

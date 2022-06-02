@@ -8,44 +8,49 @@
 /**
  * 1. Font Definitions
  */
-@include font-face(open_sansregular, '../fonts/opensans-regular-webfont', 400, normal);
-@include font-face(open_sansbold, '../fonts/opensans-bold-webfont', 700, normal);
-@include font-face(open_sansitalic, '../fonts/opensans-italic-webfont', 700, italic);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap');
 
-// Open Sans Regular.
-.sans-regular {
-  font-family: 'open_sansregular', $fallback-stack;
-  font-weight: 400;
-  font-style: normal;
+// Raleway light
+.raleway-light {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
-//  Open Sans Italic.
-.sans-italic {
-  font-family: 'open_sansitalic', $fallback-stack;
-  font-weight: 400;
-  font-style: italic;
+// Raleway regular
+.raleway-regular {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
-// Open Sans Bold.
-.sans-bold {
-  font-family: 'open_sansbold', $fallback-stack;
-  font-weight: 700;
-  font-style: normal;
+// Raleway medium
+.raleway-medium {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
+
+// Raleway semibold
+.raleway-semibold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+// Raleway bold
+.raleway-bold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+// Raleway black
+.raleway-black {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
 
 
 /**
  * 2. General Font Settings.
  */
 body {
-  @extend .sans-regular;
-}
-
-strong,
-p.bold {
-  @extend .sans-bold;
-}
-
-em {
-  @extend .sans-italic;
+    @extend .raleway-regular;
 }
