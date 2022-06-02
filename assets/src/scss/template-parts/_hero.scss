@@ -1,0 +1,16 @@
+.hero {
+    padding: 3.6rem 5%;
+}
+
+.hero__wrapper {
+    @extend .wrapper__primary;
+}
+
+.hero__title {
+    text-align: center;
+}
+
+.hero__lead {
+    @include text-style(1.2rem, 1.8rem);
+    text-align: center;
+}

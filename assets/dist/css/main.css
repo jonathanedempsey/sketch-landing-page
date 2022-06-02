@@ -503,7 +503,7 @@ textarea {
 /**
  * Wrappers
  */
-.wrapper__primary, .main-nav__wrapper {
+.wrapper__primary, .main-nav__wrapper, .hero__wrapper {
   width: auto;
   max-width: 1200px;
   margin-right: auto;
@@ -524,11 +524,11 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 300; }
 
-.raleway-regular, body {
+.raleway-regular {
   font-family: 'Raleway', sans-serif;
   font-weight: 400; }
 
-.raleway-medium {
+.raleway-medium, body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
@@ -540,9 +540,26 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
-.raleway-black {
+.raleway-black, h1,
+.title__h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 900; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 1.4rem;
+  padding: 0; }
+
+h1,
+.title__h1 {
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  color: #242424; }
 
 /**
  * 2. General Font Settings.
@@ -586,7 +603,7 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
           transform: translateY(-6px) rotate(-45deg); }
 
 .main-nav {
-  padding: 15px 5%;
+  padding: 1rem 5%;
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
 .main-nav__wrapper {
@@ -674,6 +691,18 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 /**
  * 7. Template Parts
  */
+.hero {
+  padding: 3.6rem 5%; }
+
+.hero__title {
+  text-align: center; }
+
+.hero__lead {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #242424;
+  text-align: center; }
+
 /**
  * 8. Vendor
  */

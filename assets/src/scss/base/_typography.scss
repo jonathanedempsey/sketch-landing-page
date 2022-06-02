@@ -46,13 +46,30 @@
     font-weight: 900;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 1.4rem;
+    padding: 0;
+}
+
+h1,
+.title__h1 {
+    @include text-style(2.3rem, 2.5rem, $color-text-1);
+    @extend .raleway-black;
+}
+
 
 
 /**
  * 2. General Font Settings.
  */
 body {
-    @extend .raleway-regular;
+    @extend .raleway-medium;
 }
 
 a {
