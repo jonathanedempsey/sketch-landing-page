@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', function() {
      * example.js tests JS file inclusion used by 'gulp-include'.
      * Please delete upon project start.
      */
-    //=include includes/plugins.js
+    //=include includes/main-nav.js
 });

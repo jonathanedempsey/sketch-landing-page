@@ -11,3 +11,10 @@
   background: $selection;
   text-shadow: none;
 }
+
+/**
+ * Wrappers
+ */
+.wrapper__primary {
+    @include wrapper--1200();
+}

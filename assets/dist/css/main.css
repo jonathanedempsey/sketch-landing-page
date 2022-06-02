@@ -501,6 +501,18 @@ textarea {
   text-shadow: none; }
 
 /**
+ * Wrappers
+ */
+.wrapper__primary, .main-nav__wrapper {
+  width: auto;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  float: none; }
+
+/**
  * Sections:
  * 1. Font Definitions.
  * 2. General Font Settings.
@@ -520,7 +532,7 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
-.raleway-semibold {
+.raleway-semibold, .main-nav__link {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; }
 
@@ -535,9 +547,65 @@ textarea {
 /**
  * 2. General Font Settings.
  */
+a {
+  text-decoration: none; }
+
 /**
  * 4. Components
  */
+.hamburger .line {
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.hamburger:hover {
+  cursor: pointer; }
+
+/**
+ * Hamburger active
+ */
+.hamburger.is-active .line:nth-child(2) {
+  opacity: 0; }
+
+.hamburger.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+      -ms-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg); }
+
+.hamburger.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+      -ms-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg); }
+
+.main-nav {
+  padding: 15px 5%;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.main-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main-nav__logo img {
+  width: 30px;
+  height: auto; }
+
+.main-nav__link a {
+  font-size: 15px;
+  line-height: 15px;
+  color: #242424; }
+
 /**
  * 5. Layout
  */

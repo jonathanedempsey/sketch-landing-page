@@ -1,0 +1,26 @@
+.main-nav {
+    padding: 15px 5%;
+    border: 1px solid rgba($black, .1);
+}
+
+.main-nav__wrapper {
+    @extend .wrapper__primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Logo
+.main-nav__logo img {
+    width: 30px;
+    height: auto;
+}
+
+.main-nav__link {
+    @extend .raleway-semibold;
+
+    a {
+        @include text-style(15px, 15px, $color-text-1);
+    }
+}
+

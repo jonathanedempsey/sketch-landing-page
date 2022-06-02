@@ -1,0 +1,27 @@
+.hamburger .line {
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+    display: block;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/**
+ * Hamburger active
+ */
+.hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
