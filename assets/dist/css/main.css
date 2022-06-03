@@ -536,7 +536,7 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; }
 
-.raleway-bold, .btn, .app-box__btn a {
+.raleway-bold, .btn, .btn--white {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
@@ -592,7 +592,7 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 /**
  * 4. Components
  */
-.btn, .app-box__btn a {
+.btn, .btn--white {
   font-size: 0.9rem;
   line-height: 1.5rem;
   color: #212123;
@@ -600,8 +600,16 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   border-radius: 0.3rem;
   background-color: #000000;
   color: #ffffff; }
-  .btn:hover, .app-box__btn a:hover, .btn:focus, .app-box__btn a:focus, .btn:active, .app-box__btn a:active {
+  .btn:hover, .btn--white:hover, .btn:focus, .btn--white:focus, .btn:active, .btn--white:active {
     background-color: #262626; }
+
+.btn--white {
+  background-color: #ffffff;
+  color: #212123;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem; }
+  .btn--white:hover, .btn--white:focus, .btn--white:active {
+    background-color: #f2f2f2; }
 
 .hamburger .line {
   width: 25px;
@@ -762,6 +770,10 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 .app-box__pill {
   margin-bottom: 0.8rem; }
 
+.app-box__icon {
+  display: block;
+  margin-left: -8px; }
+
 .app-box__title {
   margin-bottom: 0.25rem;
   letter-spacing: -.5px; }
@@ -801,6 +813,11 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
     color: #212123; }
     .app-box__links a:hover, .app-box__links a:focus, .app-box__links a:active {
       color: #5f5f65; }
+
+.app-box__hint {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #5f636a; }
 
 .app-box__image img {
   width: 100%; }

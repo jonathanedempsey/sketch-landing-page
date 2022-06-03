@@ -27,6 +27,11 @@
     margin-bottom: 0.8rem;
 }
 
+.app-box__icon {
+    display: block;
+    margin-left: -8px;
+}
+
 .app-box__title {
     margin-bottom: 0.25rem;
     letter-spacing: -.5px;
@@ -39,11 +44,6 @@
 .app-box__btn {
     display: inline-flex;
     margin-bottom: 0.9rem;
-
-    a {
-        @extend .btn;
-
-    }
 }
 
 .app-box__links {
@@ -80,6 +80,10 @@
             color: lighten($color-text-1, 25%);
         }
     }
+}
+
+.app-box__hint {
+    @include text-style(0.8rem, 1rem, $color-text-2);
 }
 
 .app-box__image {
