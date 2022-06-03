@@ -8,7 +8,7 @@
 /**
  * 1. Font Definitions
  */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 // Raleway light
 .raleway-light {
@@ -40,6 +40,12 @@
     font-weight: 700;
 }
 
+// Raleway semiblack
+.raleway-semiblack {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
 // Raleway black
 .raleway-black {
     font-family: 'Raleway', sans-serif;
@@ -66,7 +72,7 @@ h1,
 h2,
 .title__h2 {
     @include text-style(1.4rem, 2rem, $color-text-1);
-    @extend .raleway-bold;
+    @extend .raleway-semiblack;
 }
 
 

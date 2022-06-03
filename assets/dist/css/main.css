@@ -19,7 +19,7 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -536,10 +536,14 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; }
 
-.raleway-bold, h2,
-.title__h2, .btn, .app-box__btn a {
+.raleway-bold, .btn, .app-box__btn a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
+
+.raleway-semiblack, h2,
+.title__h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; }
 
 .raleway-black, h1,
 .title__h1 {
@@ -654,6 +658,16 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
     line-height: 15px;
     color: #212123; }
 
+.pill, .app-box__pill {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #212123;
+  display: inline-block;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  background-color: #ebebeb; }
+
 /**
  * 5. Layout
  */
@@ -737,8 +751,14 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.7rem; }
 
+.app-box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
 .app-box__content {
-  padding: 1.5rem 1.5rem 0; }
+  padding: 1.2rem 1.2rem 0; }
+
+.app-box__pill {
+  margin-bottom: 0.8rem; }
 
 .app-box__title {
   margin-bottom: 0.25rem;
