@@ -63,6 +63,12 @@ h1,
     @extend .raleway-black;
 }
 
+h2,
+.title__h2 {
+    @include text-style(1.4rem, 2rem, $color-text-1);
+    @extend .raleway-bold;
+}
+
 
 
 /**
@@ -70,10 +76,12 @@ h1,
  */
 body {
     @extend .raleway-medium;
+    @include text-style(1rem, 1.5rem, $color-text-1);
 }
 
 a {
     text-decoration: none;
+    transition: .3s;
 }
 
 a.hover--underline {

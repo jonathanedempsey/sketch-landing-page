@@ -532,11 +532,12 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
-.raleway-semibold, .main-nav__link {
+.raleway-semibold, .main-nav__link, .app-box__links a {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; }
 
-.raleway-bold {
+.raleway-bold, h2,
+.title__h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
@@ -559,13 +560,27 @@ h1,
 .title__h1 {
   font-size: 2.3rem;
   line-height: 2.5rem;
-  color: #242424; }
+  color: #212123; }
+
+h2,
+.title__h2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #212123; }
 
 /**
  * 2. General Font Settings.
  */
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #212123; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
 
 a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .main-nav__link a:focus, a.hover--underline:active, .main-nav__link a:active {
   text-decoration: underline; }
@@ -626,7 +641,7 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   .main-nav__link a {
     font-size: 15px;
     line-height: 15px;
-    color: #242424; }
+    color: #212123; }
 
 /**
  * 5. Layout
@@ -692,7 +707,7 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
  * 7. Template Parts
  */
 .hero {
-  padding: 3.6rem 5%; }
+  padding: 3.6rem 5% 3.2rem; }
 
 .hero__title {
   text-align: center; }
@@ -700,11 +715,56 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 .hero__lead {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: #242424;
+  color: #212123;
+  margin: 0;
   text-align: center; }
 
 .app-boxes {
   padding: 0 5%; }
+
+.app-boxes__wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.7rem; }
+
+.app-box__content {
+  padding: 1.5rem 1.5rem 0; }
+
+.app-box__title {
+  margin-bottom: 0.25rem;
+  letter-spacing: -.5px; }
+
+.app-box__text {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #212123; }
+
+.app-box__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .app-box__links li {
+    margin-right: 1.5rem; }
+    .app-box__links li:last-child {
+      margin-right: 0;
+      position: relative; }
+      .app-box__links li:last-child::after {
+        display: block;
+        position: absolute;
+        top: -0.2rem;
+        left: -0.8rem;
+        content: "."; }
+  .app-box__links a {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: #212123; }
+    .app-box__links a:hover, .app-box__links a:focus, .app-box__links a:active {
+      color: #5f5f65; }
+
+.app-box__image img {
+  width: 100%; }
 
 /**
  * 8. Vendor
