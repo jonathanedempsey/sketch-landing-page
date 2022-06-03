@@ -1,0 +1,7 @@
+.app-boxes {
+    padding: 0 5%;
+}
+
+.app-boxes__wrapper {
+    @extend .wrapper__primary;
+}

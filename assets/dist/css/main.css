@@ -503,7 +503,7 @@ textarea {
 /**
  * Wrappers
  */
-.wrapper__primary, .main-nav__wrapper, .hero__wrapper {
+.wrapper__primary, .main-nav__wrapper, .hero__wrapper, .app-boxes__wrapper {
   width: auto;
   max-width: 1200px;
   margin-right: auto;
@@ -604,7 +604,7 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 
 .main-nav {
   padding: 1rem 5%;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .main-nav__wrapper {
   display: -webkit-box;
@@ -702,6 +702,9 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   line-height: 1.8rem;
   color: #242424;
   text-align: center; }
+
+.app-boxes {
+  padding: 0 5%; }
 
 /**
  * 8. Vendor
