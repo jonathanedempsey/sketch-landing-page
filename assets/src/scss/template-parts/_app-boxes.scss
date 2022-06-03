@@ -20,6 +20,16 @@
     @include text-style(0.9rem, 1.5rem, $color-text-1);
 }
 
+.app-box__btn {
+    display: inline-flex;
+    margin-bottom: 0.9rem;
+
+    a {
+        @extend .btn;
+
+    }
+}
+
 .app-box__links {
     display: flex;
     list-style: none;

@@ -537,7 +537,7 @@ textarea {
   font-weight: 600; }
 
 .raleway-bold, h2,
-.title__h2 {
+.title__h2, .btn, .app-box__btn a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
@@ -588,6 +588,17 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 /**
  * 4. Components
  */
+.btn, .app-box__btn a {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #212123;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: #000000;
+  color: #ffffff; }
+  .btn:hover, .app-box__btn a:hover, .btn:focus, .app-box__btn a:focus, .btn:active, .app-box__btn a:active {
+    background-color: #262626; }
+
 .hamburger .line {
   width: 25px;
   height: 2px;
@@ -737,6 +748,12 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   font-size: 0.9rem;
   line-height: 1.5rem;
   color: #212123; }
+
+.app-box__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 0.9rem; }
 
 .app-box__links {
   display: -webkit-box;
