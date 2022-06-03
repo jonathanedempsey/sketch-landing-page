@@ -1,7 +1,7 @@
 .btn {
     @extend .raleway-bold;
     @include text-style(0.9rem, 1.5rem, $color-text-1);
-    padding:  0.6rem;
+    padding:  0.5rem 0.6rem;
     border-radius: 0.3rem;
     background-color: $black;
     color: $white;

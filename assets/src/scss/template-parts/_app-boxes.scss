@@ -10,10 +10,16 @@
 
 .app-box {
     border-bottom: 1px solid $color-border-1;
+
+    &:first-child {
+        .app-box__content {
+            padding: 1.2rem 1.2rem 0;
+        }
+    }
 }
 
 .app-box__content {
-    padding: 1.2rem 1.2rem 0;
+    padding: 2.2rem 1.2rem 0;
 }
 
 .app-box__pill {
