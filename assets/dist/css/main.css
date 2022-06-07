@@ -503,7 +503,7 @@ textarea {
 /**
  * Wrappers
  */
-.wrapper__primary, .main-nav__wrapper, .hero__wrapper, .app-boxes__wrapper {
+.wrapper__primary, .main-nav__wrapper, .footer__wrapper, .hero__wrapper, .app-boxes__wrapper {
   width: auto;
   max-width: 1200px;
   margin-right: auto;
@@ -532,11 +532,12 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
-.raleway-semibold, .main-nav__link, .app-box__links a {
+.raleway-semibold, .main-nav__link, .footer__nav-group__menu a, .app-box__links a {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; }
 
-.raleway-bold, .btn, .btn--white {
+.raleway-bold, h3,
+.title__h3, .btn, .btn--white {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
@@ -570,6 +571,12 @@ h2,
 .title__h2 {
   font-size: 1.4rem;
   line-height: 2rem;
+  color: #212123; }
+
+h3,
+.title__h3 {
+  font-size: 1rem;
+  line-height: 1.2rem;
   color: #212123; }
 
 /**
@@ -679,6 +686,32 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 /**
  * 5. Layout
  */
+.footer {
+  padding: 0 5% 2rem; }
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-gap: 2rem 1.5rem;
+  padding: 2rem 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+.footer__nav-group__title {
+  margin: 0 0 1rem; }
+
+.footer__nav-group__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .footer__nav-group__menu a {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: #7f7f7f;
+    display: block;
+    margin-bottom: 0.7rem; }
+    .footer__nav-group__menu a:hover, .footer__nav-group__menu a:focus, .footer__nav-group__menu a:active {
+      color: #4c4c4c; }
+
 /**
  * Print styles.
  * Inlined to avoid the additional HTTP request:

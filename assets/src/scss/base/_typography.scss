@@ -75,7 +75,11 @@ h2,
     @extend .raleway-semiblack;
 }
 
-
+h3,
+.title__h3 {
+    @include text-style(1rem, 1.2rem, $color-text-1);
+    @extend .raleway-bold;
+}
 
 /**
  * 2. General Font Settings.

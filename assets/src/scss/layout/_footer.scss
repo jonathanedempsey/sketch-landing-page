@@ -1,1 +1,38 @@
+.footer {
+    padding: 0 5% 2rem;
+}
 
+.footer__wrapper {
+    @extend .wrapper__primary;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-gap: 2rem 1.5rem;
+    padding: 2rem 0 0;
+    border-top: 1px solid $color-border-1;
+}
+
+.footer__nav-group__title {
+    margin: 0 0 1rem;
+}
+
+.footer__nav-group__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+        @include text-style( 0.9rem, 1.2rem, $color-text-3);
+        @extend .raleway-semibold;
+        display: block;
+        margin-bottom: 0.7rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken($color-text-3, 20%);
+        }
+    }
+}
