@@ -12,9 +12,18 @@
     grid-gap: 2rem 1.5rem;
     padding: 2rem 0 0;
     border-top: 1px solid $color-border-1;
+
+    .pill {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0.5rem;
+        color:  darken($color-text-3, 20%);
+    }
 }
 
 .footer__nav-group__title {
+    position: relative;
     margin: 0 0 1rem;
 }
 
@@ -22,6 +31,10 @@
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.footer__nav-group__menu-item {
+    position: relative;
 
     a {
         @include text-style( 0.9rem, 1.2rem, $color-text-3);

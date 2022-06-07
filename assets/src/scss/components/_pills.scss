@@ -5,4 +5,13 @@
     border-radius: 0.5rem;
     text-transform: uppercase;
     background-color: $color-light-ui-2;
+
+    &--numerical {
+        padding: 0.5rem 0.5rem 0.6rem;
+        line-height: 0;
+    }
+
+    &--gradient {
+        background: linear-gradient(90deg, $color-highlight-3 0, $color-highlight-4 35%, $color-highlight-5 69%, $color-highlight-6 100%);
+    }
 }

@@ -532,7 +532,7 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
-.raleway-semibold, .main-nav__link, .footer__nav-group__menu a, .app-box__links a {
+.raleway-semibold, .main-nav__link, .footer__nav-group__menu-item a, .app-box__links a {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; }
 
@@ -682,6 +682,13 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   border-radius: 0.5rem;
   text-transform: uppercase;
   background-color: #ebebeb; }
+  .pill--numerical {
+    padding: 0.5rem 0.5rem 0.6rem;
+    line-height: 0; }
+  .pill--gradient {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #e8b8fc), color-stop(35%, #e7db8f), color-stop(69%, #a6f1e8), to(#88fccf));
+    background: -o-linear-gradient(left, #e8b8fc 0, #e7db8f 35%, #a6f1e8 69%, #88fccf 100%);
+    background: linear-gradient(90deg, #e8b8fc 0, #e7db8f 35%, #a6f1e8 69%, #88fccf 100%); }
 
 /**
  * 5. Layout
@@ -695,21 +702,33 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   grid-gap: 2rem 1.5rem;
   padding: 2rem 0 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .footer__nav .pill, .footer__nav .app-box__pill {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 0.5rem;
+    color: #4c4c4c; }
 
 .footer__nav-group__title {
+  position: relative;
   margin: 0 0 1rem; }
 
 .footer__nav-group__menu {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .footer__nav-group__menu a {
+
+.footer__nav-group__menu-item {
+  position: relative; }
+  .footer__nav-group__menu-item a {
     font-size: 0.9rem;
     line-height: 1.2rem;
     color: #7f7f7f;
     display: block;
     margin-bottom: 0.7rem; }
-    .footer__nav-group__menu a:hover, .footer__nav-group__menu a:focus, .footer__nav-group__menu a:active {
+    .footer__nav-group__menu-item a:hover, .footer__nav-group__menu-item a:focus, .footer__nav-group__menu-item a:active {
       color: #4c4c4c; }
 
 /**
