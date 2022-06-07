@@ -730,6 +730,18 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
     margin-bottom: 0.7rem; }
     .footer__nav-group__menu-item a:hover, .footer__nav-group__menu-item a:focus, .footer__nav-group__menu-item a:active {
       color: #4c4c4c; }
+      .footer__nav-group__menu-item a:hover svg, .footer__nav-group__menu-item a:focus svg, .footer__nav-group__menu-item a:active svg {
+        opacity: .7; }
+  .footer__nav-group__menu-item svg {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg);
+    opacity: .5;
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s; }
 
 /**
  * Print styles.

@@ -18,7 +18,7 @@
         top: 50%;
         transform: translateY(-50%);
         margin-left: 0.5rem;
-        color:  darken($color-text-3, 20%);
+        color: darken($color-text-3, 20%);
     }
 }
 
@@ -46,6 +46,18 @@
         &:focus,
         &:active {
             color: darken($color-text-3, 20%);
+
+            svg {
+                opacity: .7;
+            }
         }
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        opacity: .5;
+        transition: .1s;
     }
 }
