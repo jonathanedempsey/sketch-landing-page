@@ -753,7 +753,7 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   text-align: center; }
 
 .app-boxes {
-  padding: 0 5%; }
+  padding: 0 5% 4rem; }
 
 .app-boxes__wrapper {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -763,6 +763,8 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .app-box:first-child .app-box__content {
     padding: 1.2rem 1.2rem 0; }
+  .app-box:last-child {
+    border-bottom: 0; }
 
 .app-box__content {
   padding: 2.2rem 1.2rem 0; }

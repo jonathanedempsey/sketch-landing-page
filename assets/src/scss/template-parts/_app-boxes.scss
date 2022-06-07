@@ -1,5 +1,5 @@
 .app-boxes {
-    padding: 0 5%;
+    padding: 0 5% 4rem;
 }
 
 .app-boxes__wrapper {
@@ -15,6 +15,10 @@
         .app-box__content {
             padding: 1.2rem 1.2rem 0;
         }
+    }
+
+    &:last-child {
+        border-bottom: 0;
     }
 }
 
