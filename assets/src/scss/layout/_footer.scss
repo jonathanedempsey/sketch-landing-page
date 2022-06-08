@@ -63,8 +63,8 @@
 }
 
 /**
-* Footer bottom
-*/
+ * Footer bottom
+ */
 .footer__bottom {
     padding: 3rem 5% 1.4rem;
 }
@@ -81,6 +81,16 @@
 
         &:last-child {
             margin-right: 0;
+        }
+    }
+
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            .social-icon {
+                opacity: .7;
+            }
         }
     }
 }

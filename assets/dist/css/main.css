@@ -618,6 +618,17 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   .btn--white:hover, .btn--white:focus, .btn--white:active {
     background-color: #f2f2f2; }
 
+/**
+* Social icon
+*/
+.social-icon {
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s; }
+
 .hamburger .line {
   width: 25px;
   height: 2px;
@@ -744,8 +755,8 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
     transition: .1s; }
 
 /**
-* Footer bottom
-*/
+ * Footer bottom
+ */
 .footer__bottom {
   padding: 3rem 5% 1.4rem; }
 
@@ -763,6 +774,8 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
     margin-right: 1.4rem; }
     .footer__social li:last-child {
       margin-right: 0; }
+  .footer__social a:hover .social-icon, .footer__social a:focus .social-icon, .footer__social a:active .social-icon {
+    opacity: .7; }
 
 .footer__copyright {
   font-size: 0.9rem;
