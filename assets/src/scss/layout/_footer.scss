@@ -61,3 +61,31 @@
         transition: .1s;
     }
 }
+
+/**
+* Footer bottom
+*/
+.footer__bottom {
+    padding: 3rem 5% 1.4rem;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 1rem;
+    list-style: none;
+
+    li {
+        margin-right: 1.4rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer__copyright {
+    @include text-style(0.9rem, 1rem, $color-text-3);
+    text-align: center;
+}

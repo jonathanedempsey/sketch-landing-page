@@ -744,6 +744,33 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
     transition: .1s; }
 
 /**
+* Footer bottom
+*/
+.footer__bottom {
+  padding: 3rem 5% 1.4rem; }
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0 0 1rem;
+  list-style: none; }
+  .footer__social li {
+    margin-right: 1.4rem; }
+    .footer__social li:last-child {
+      margin-right: 0; }
+
+.footer__copyright {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #7f7f7f;
+  text-align: center; }
+
+/**
  * Print styles.
  * Inlined to avoid the additional HTTP request:
  * http://www.phpied.com/delay-loading-your-print-css/
