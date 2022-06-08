@@ -92,7 +92,6 @@
                 position: absolute;
                 top: -0.2rem;
                 left: -0.8rem;
-
                 content: ".";
             }
         }
@@ -119,9 +118,7 @@
         width: 100%;
 
         @include breakpoint($break-768-up) {
-            object-fit: cover
-            // object-position: left;
-            // height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -156,6 +153,37 @@
         @include breakpoint($break-768-up) {
             object-position: left;
             height: 100%;
+        }
+    }
+}
+
+.app-box__ios {
+    @include breakpoint($break-768-up) {
+        display: grid;
+        grid-template-columns: 1fr 280px;
+    }
+
+    .app-box__content {
+        @include breakpoint($break-768-up) {
+            position: relative;
+            padding: 2.2rem 1.2rem 2.2rem 6rem;
+        }
+    }
+
+    .app-box__icon {
+        @include breakpoint($break-768-up) {
+            position: absolute;
+            left: 1.2rem;
+        }
+    }
+
+    .app-box__download {
+        @include breakpoint($break-768-up) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding: 0 2rem 2.2rem 0;
         }
     }
 }
