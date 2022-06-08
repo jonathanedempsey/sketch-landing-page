@@ -870,17 +870,32 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 
 .app-boxes__wrapper {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.7rem; }
+  border-radius: 0.7rem;
+  overflow: hidden; }
 
 .app-box {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  @media (min-width: 768px) {
+    .app-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 1.4rem; } }
   .app-box:first-child .app-box__content {
     padding: 1.2rem 1.2rem 0; }
+    @media (min-width: 768px) {
+      .app-box:first-child .app-box__content {
+        padding: 2.4rem 1.2rem; } }
   .app-box:last-child {
     border-bottom: 0; }
+  @media (min-width: 768px) {
+    .app-box:nth-child(odd) .app-box__image {
+      grid-row: 1; } }
 
 .app-box__content {
   padding: 2.2rem 1.2rem 0; }
+  @media (min-width: 768px) {
+    .app-box__content {
+      padding: 2.2rem 1.2rem; } }
 
 .app-box__pill {
   margin-bottom: 0.8rem; }
@@ -936,6 +951,32 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
 
 .app-box__image img {
   width: 100%; }
+  @media (min-width: 768px) {
+    .app-box__image img {
+      -o-object-fit: cover;
+         object-fit: cover; } }
+
+@media (min-width: 768px) {
+  .app-box__image--mobile {
+    display: none; } }
+
+.app-box__image--desktop {
+  display: none; }
+  @media (min-width: 768px) {
+    .app-box__image--desktop {
+      display: block; } }
+
+@media (min-width: 768px) {
+  .app-box__mac .app-box__image img {
+    -o-object-position: right;
+       object-position: right;
+    height: 100%; } }
+
+@media (min-width: 768px) {
+  .app-box__web img {
+    -o-object-position: left;
+       object-position: left;
+    height: 100%; } }
 
 /**
  * 8. Vendor

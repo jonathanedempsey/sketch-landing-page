@@ -1,29 +1,53 @@
 .app-boxes {
     padding: 0 5% 4rem;
+
 }
 
 .app-boxes__wrapper {
     @extend .wrapper__primary;
     border: 1px solid $color-border-1;
     border-radius: 0.7rem;
+    overflow: hidden;
 }
 
 .app-box {
     border-bottom: 1px solid $color-border-1;
 
+    @include breakpoint($break-768-up) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 1.4rem;
+    }
+
     &:first-child {
         .app-box__content {
             padding: 1.2rem 1.2rem 0;
+
+            @include breakpoint($break-768-up) {
+                padding: 2.4rem 1.2rem;
+            }
         }
     }
 
     &:last-child {
         border-bottom: 0;
     }
+
+    &:nth-child(odd) {
+        .app-box__image {
+            @include breakpoint($break-768-up) {
+                grid-row: 1;
+            }
+        }
+    }
 }
 
 .app-box__content {
     padding: 2.2rem 1.2rem 0;
+
+    @include breakpoint($break-768-up) {
+        padding: 2.2rem 1.2rem;
+    }
 }
 
 .app-box__pill {
@@ -93,5 +117,45 @@
 .app-box__image {
     img {
         width: 100%;
+
+        @include breakpoint($break-768-up) {
+            object-fit: cover
+            // object-position: left;
+            // height: 100%;
+        }
+    }
+
+    &--mobile {
+        @include breakpoint($break-768-up) {
+            display: none;
+        }
+    }
+
+    &--desktop {
+        display: none;
+
+        @include breakpoint($break-768-up) {
+            display: block;
+        }
+    }
+}
+
+.app-box__mac {
+    .app-box__image {
+        img {
+            @include breakpoint($break-768-up) {
+                object-position: right;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.app-box__web {
+    img {
+        @include breakpoint($break-768-up) {
+            object-position: left;
+            height: 100%;
+        }
     }
 }
