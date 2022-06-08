@@ -67,6 +67,10 @@ h1,
 .title__h1 {
     @include text-style(2.3rem, 2.5rem, $color-text-1);
     @extend .raleway-black;
+
+    @include breakpoint($break-768-up) {
+        @include text-style(3.5rem, 3.9rem);
+    }
 }
 
 h2,

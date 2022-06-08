@@ -566,6 +566,12 @@ h1,
   font-size: 2.3rem;
   line-height: 2.5rem;
   color: #212123; }
+  @media (min-width: 768px) {
+    h1,
+    .title__h1 {
+      font-size: 3.5rem;
+      line-height: 3.9rem;
+      color: #212123; } }
 
 h2,
 .title__h2 {
@@ -845,6 +851,9 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
  */
 .hero {
   padding: 3.6rem 5% 3.2rem; }
+  @media (min-width: 768px) {
+    .hero {
+      padding: 5.2rem 5% 3.5rem; } }
 
 .hero__title {
   text-align: center; }

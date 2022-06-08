@@ -1,5 +1,9 @@
 .hero {
     padding: 3.6rem 5% 3.2rem;
+
+    @include breakpoint($break-768-up) {
+        padding: 5.2rem 5% 3.5rem;
+    }
 }
 
 .hero__wrapper {
