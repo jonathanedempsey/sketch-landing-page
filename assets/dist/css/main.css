@@ -532,7 +532,7 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
-.raleway-semibold, .main-nav__link, .footer__nav-group__menu-item a, .app-box__links a {
+.raleway-semibold, .main-nav__menu-item, .main-nav__link, .footer__nav-group__menu-item a, .app-box__links a {
   font-family: 'Raleway', sans-serif;
   font-weight: 600; }
 
@@ -599,7 +599,7 @@ a {
   -o-transition: .3s;
   transition: .3s; }
 
-a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .main-nav__link a:focus, a.hover--underline:active, .main-nav__link a:active {
+a.hover--underline:hover, .main-nav__menu-item a:hover, .main-nav__link a:hover, a.hover--underline:focus, .main-nav__menu-item a:focus, .main-nav__link a:focus, a.hover--underline:active, .main-nav__menu-item a:active, .main-nav__link a:active {
   text-decoration: underline; }
 
 /**
@@ -671,6 +671,10 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   z-index: 1; }
+  @media (min-width: 850px) {
+    .main-nav {
+      position: relative;
+      border-bottom: 0px; } }
 
 .main-nav__wrapper {
   display: -webkit-box;
@@ -683,9 +687,35 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
       -ms-flex-align: center;
           align-items: center; }
 
+@media (min-width: 850px) {
+  .main-nav__hamburger {
+    display: none; } }
+
 .main-nav__logo img {
   width: 30px;
   height: auto; }
+  @media (min-width: 850px) {
+    .main-nav__logo img {
+      padding: 0 1rem 0 0; } }
+
+.main-nav__menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 0 0; }
+  @media (min-width: 850px) {
+    .main-nav__menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.main-nav__menu-item {
+  font-weight: bold; }
+  .main-nav__menu-item a {
+    font-size: 15px;
+    line-height: 15px;
+    color: #212123;
+    padding: 0 1rem; }
 
 .main-nav__link {
   font-weight: bold; }
@@ -693,6 +723,17 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
     font-size: 15px;
     line-height: 15px;
     color: #212123; }
+    @media (min-width: 850px) {
+      .main-nav__link a {
+        padding: 0 1rem; } }
+
+.main-nav__btn {
+  display: none; }
+  @media (min-width: 850px) {
+    .main-nav__btn {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; } }
 
 .pill, .app-box__pill {
   font-size: 0.7rem;
