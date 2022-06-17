@@ -572,6 +572,12 @@ h1,
       font-size: 3.5rem;
       line-height: 3.9rem;
       color: #212123; } }
+  @media (min-width: 1025px) {
+    h1,
+    .title__h1 {
+      font-size: 4.5rem;
+      line-height: 4.9rem;
+      color: #212123; } }
 
 h2,
 .title__h2 {
@@ -899,6 +905,13 @@ a.hover--underline:hover, .main-nav__menu-item a:hover, .main-nav__link a:hover,
   @media (min-width: 768px) {
     .hero {
       padding: 5.2rem 5% 3.5rem; } }
+  @media (min-width: 1025px) {
+    .hero {
+      padding: 5.2rem 5% 7rem; } }
+
+@media (min-width: 1025px) {
+  .hero__wrapper {
+    max-width: 50rem; } }
 
 .hero__title {
   text-align: center; }
@@ -909,6 +922,11 @@ a.hover--underline:hover, .main-nav__menu-item a:hover, .main-nav__link a:hover,
   color: #212123;
   margin: 0;
   text-align: center; }
+  @media (min-width: 1025px) {
+    .hero__lead {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #212123; } }
 
 .app-boxes {
   position: relative;

@@ -71,6 +71,10 @@ h1,
     @include breakpoint($break-768-up) {
         @include text-style(3.5rem, 3.9rem);
     }
+
+    @include breakpoint($break-1025-up) {
+        @include text-style(4.5rem, 4.9rem);
+    }
 }
 
 h2,

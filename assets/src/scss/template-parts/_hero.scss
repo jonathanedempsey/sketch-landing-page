@@ -4,10 +4,18 @@
     @include breakpoint($break-768-up) {
         padding: 5.2rem 5% 3.5rem;
     }
+
+    @include breakpoint($break-1025-up) {
+        padding: 5.2rem 5% 7rem;
+    }
 }
 
 .hero__wrapper {
     @extend .wrapper__primary;
+
+    @include breakpoint($break-1025-up) {
+        max-width: 50rem;
+    }
 }
 
 .hero__title {
@@ -18,4 +26,8 @@
     @include text-style(1.2rem, 1.8rem);
     margin: 0;
     text-align: center;
+
+    @include breakpoint($break-1025-up) {
+        @include text-style(1.4rem, 2rem);
+    }
 }
