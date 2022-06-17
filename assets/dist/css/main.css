@@ -870,6 +870,7 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   text-align: center; }
 
 .app-boxes {
+  position: relative;
   padding: 0 5% 4rem; }
 
 .app-boxes__wrapper {
@@ -877,8 +878,19 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
   border-radius: 0.7rem;
   overflow: hidden; }
 
+.app-boxes__background-image {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  z-index: -1; }
+  .app-boxes__background-image img {
+    max-width: 100%; }
+
 .app-box {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px); }
   @media (min-width: 768px) {
     .app-box {
       display: grid;

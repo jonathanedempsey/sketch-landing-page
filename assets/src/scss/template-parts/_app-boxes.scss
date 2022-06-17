@@ -1,4 +1,5 @@
 .app-boxes {
+    position: relative;
     padding: 0 5% 4rem;
 
 }
@@ -10,8 +11,21 @@
     overflow: hidden;
 }
 
+.app-boxes__background-image {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    z-index: -1;
+
+    img {
+        max-width: 100%;
+    }
+}
+
 .app-box {
     border-bottom: 1px solid $color-border-1;
+    background-color: rgba($white, .6);
+    backdrop-filter: blur(30px);
 
     @include breakpoint($break-768-up) {
         display: grid;
