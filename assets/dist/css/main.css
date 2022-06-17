@@ -665,8 +665,12 @@ a.hover--underline:hover, .main-nav__link a:hover, a.hover--underline:focus, .ma
           transform: translateY(-6px) rotate(-45deg); }
 
 .main-nav {
+  position: sticky;
+  top: 0;
   padding: 1rem 5%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  z-index: 1; }
 
 .main-nav__wrapper {
   display: -webkit-box;

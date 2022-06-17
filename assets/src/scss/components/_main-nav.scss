@@ -1,6 +1,10 @@
 .main-nav {
+    position: sticky;
+    top: 0;
     padding: 1rem 5%;
     border-bottom: 1px solid $color-border-1;
+    background-color: $white;
+    z-index: 1;
 }
 
 .main-nav__wrapper {
